@@ -1,6 +1,5 @@
 function () {
   
-  const template = `<div class="relativeParent"><div class="absoluteParent"><slot></slot></div></div>`;
   const style = `
     div {
       margin: 0;
@@ -19,6 +18,7 @@ function () {
       height: 100%;
     }
   `;
+  const template = `<style>${style}</style><div class="relativeParent"><div class="absoluteParent"><slot></slot></div></div>`;
 
   class FlexContain extends HTMLElement {
     constructor() {
@@ -29,8 +29,8 @@ function () {
       var shadow = this.attachShadow({
         mode: 'open'
       });
-      const slot = document.createElement('slot');
-      shadow.appendChild(slot);
+      
+      shadow.innerHTML = template;
     }
   }
 
