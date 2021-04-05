@@ -1,0 +1,26 @@
+{
+  "name": "flex-contain",
+  "version": "1.0.0",
+  "description": "Create a flex element that whose size is not affected by child element sizes.  Similar to the bounding affect of an iframe",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^11.3.2",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && serve -l 7900",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grax32/flex-contain.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grax32/flex-contain/issues"
+  },
+  "homepage": "https://github.com/Grax32/flex-contain#readme"
+}
